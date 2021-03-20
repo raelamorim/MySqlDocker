@@ -1,5 +1,13 @@
 "# MySqlDocker" 
+version: '3'
 
+services:
+  redis:
+    image: redis
+    command: redis-server --requirepass Redis2019!
+    ports:
+      - "6379:6379"
+      - 
     ############################# ZOOKEEPER #################################
     zookeeper:  
         hostname: zookeeper
