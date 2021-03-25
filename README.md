@@ -1,6 +1,8 @@
 "# MySqlDocker" 
 version: '3'
 
+## docker run --rm -it -v ${PWD}:/tutorial --net=host landoop/fast-data-dev:cp3.3.0 bash
+
 services:
   redis:
     image: redis
